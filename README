@@ -11,7 +11,7 @@ The initial revision will support enough of `RFC 3981`_ (IRIS), `RFC 3982`_
 support `RFC 5144`_ (DCHK), at least for writing a dchk client library.
 
 It is not as yet intended that any support be added for `S-NAPTR`_-based
-service discovery. That will come later.
+service discovery initially. That will come later.
 
 .. _RFC 3981: http://tools.ietf.org/html/rfc3981
 .. _RFC 3982: http://tools.ietf.org/html/rfc3982
