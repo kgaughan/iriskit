@@ -6,7 +6,9 @@ from lxml.builder import ElementMaker
 from iriskit import namespaces
 
 
-E = ElementMaker(namespace=namespaces.IRIS_TRANSPORT)
+E = ElementMaker(
+    namespace=namespaces.IRIS_TRANSPORT,
+    nsmap={None: namespaces.IRIS_TRANSPORT})
 
 
 def build_version_info(protocols):
