@@ -1,4 +1,4 @@
-include LICENSE ChangeLog requirements.txt
+include LICENSE ChangeLog buildkit.py requirements.txt
 recursive-include docs *.rst *.py
 recursive-include tests *.py
 recursive-include examples *.py
