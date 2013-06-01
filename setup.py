@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 
-from __future__ import with_statement
-
 from setuptools import setup, find_packages
 from buildkit import *
 
@@ -13,7 +11,7 @@ setup(
     name='iriskit',
     version=META['version'],
     description='Internet Registry Information Service (IRIS) client',
-    long_description=read('README'),
+    long_description=read('README') + "\n\n" + read('ChangeLog'),
     url='https://github.com/kgaughan/iriskit/',
     platforms=['any'],
     license='MIT',
@@ -22,23 +20,23 @@ setup(
     install_requires=read_requirements('requirements.txt'),
     include_package_data=True,
 
-    classifiers=[
+    classifiers=(
         'Development Status :: 2 - Pre-Alpha',
         'Environment :: Other Environment',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Operating System :: POSIX',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.5',
         'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.5',
+        'Programming Language :: Python :: 2.6',
+        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: Implementation :: CPython',
         'Topic :: Communications',
         'Topic :: Internet',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Topic :: System :: Networking',
-    ],
+    ),
 
     author=META['author'],
     author_email=META['email'],
