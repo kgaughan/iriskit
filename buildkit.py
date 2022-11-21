@@ -17,9 +17,10 @@ def get_metadata(module_path):
         r"^__(\w+?)__ *= *'(.*?)'$",
         read(module_path),
         re.MULTILINE)
-    return dict(
-        (match.group(1), match.group(2).decode('unicode_escape'))
-        for match in matches)
+    return {
+        match.group(1): match.group(2).decode('unicode_escape')
+        for match in matches
+    }
 
 
 def read_requirements(requirements_path):
